@@ -7,3 +7,6 @@ lvm::volume_groups:
       data1:
         size: 10G
         mountpath: /mnt/data1
+
+aptcacherng:
+  cachedir: /mnt/data1/apt-cache

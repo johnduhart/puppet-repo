@@ -1,3 +1,4 @@
 class profile::base {
-	class { '::ntp': }
+	include ::ntp
+	include ::apt
 }
