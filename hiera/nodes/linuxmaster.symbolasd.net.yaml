@@ -1,0 +1,9 @@
+---
+lvm::volume_groups:
+  datavg:
+    physical_volumes:
+      - /dev/sdb
+    logical_volumes:
+      data1:
+        size: 10G
+        mountpath: /mount/data1
