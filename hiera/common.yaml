@@ -1,6 +1,5 @@
 ---
 ntp::servers:
-  - 0.us.pool.ntp.org
-  - 1.us.pool.ntp.org
+  - linuxmaster.symbolasd.net
 apt::proxy_host: linuxmaster.symbolasd.net
 apt::proxy_port: 3142
