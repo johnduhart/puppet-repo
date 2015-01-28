@@ -11,4 +11,4 @@ mod 'jfryman/nginx'
 mod 'puppetlabs/stdlib'
 
 mod 'proteon/java',
-	:git => 'https://github.com/Proteon/puppet-java'
+	:git => 'https://github.com/johnduhart/puppet-java'
