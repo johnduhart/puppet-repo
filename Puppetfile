@@ -9,6 +9,8 @@ mod 'puppetlabs/postgresql'
 mod 'mkrakowitzer/jira'
 mod 'jfryman/nginx'
 mod 'puppetlabs/stdlib'
+mod 'puppetlabs/concat'
+mod 'nanliu/staging'
 
 mod 'proteon/java',
 	:git => 'https://github.com/johnduhart/puppet-java'
