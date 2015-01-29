@@ -5,3 +5,7 @@ node 'linuxmaster' {
 node 'linuxclient' {
 	include role::linuxclient
 }
+
+node default {
+	include profile::base
+}

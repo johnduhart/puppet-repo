@@ -11,6 +11,7 @@ mod 'jfryman/nginx'
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/concat'
 mod 'nanliu/staging'
+mod 'saz/ssh'
 
 mod 'proteon/java',
 	:git => 'https://github.com/johnduhart/puppet-java'

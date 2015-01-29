@@ -39,7 +39,7 @@ class role::linuxclient {
 
 	nginx::resource::upstream { 'jira':
 		members => [ 'localhost:8080' ],
-  	}
+	}
 
 	nginx::resource::vhost { 'jira.symbolasd.net':
 		listen_port          => '80',

@@ -1,5 +1,6 @@
 class profile::base {
 	include ::ntp
+	include ::ssh::server
 	include ::apt
 
 	file { '10oracle-proxy':
