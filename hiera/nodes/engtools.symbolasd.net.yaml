@@ -1,0 +1,8 @@
+---
+lvm::volume_groups:
+  datavg:
+    physical_volumes:
+      - /dev/sdb
+  archivevg:
+    physical_volumes:
+      - /dev/sdc
