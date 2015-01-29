@@ -7,12 +7,6 @@ class role::engtoolsdb {
 		size => '20G',
 		mountpath => '/mnt/db',
 	} ->
-	class { 'postgresql::globals':
-		manage_package_repo => true,
-		version             => '9.3',
-	} ->
-	class { 'postgresql::server': } ->
-	postgresql::server::tablespace { 'toolsts':
-		location => '/mnt/db',
-	}
+	class { '::profile::engtools::db': } ->
+	class { '::profile::engtools::jiradb': }
 }

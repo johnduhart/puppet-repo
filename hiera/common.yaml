@@ -3,3 +3,10 @@ ntp::servers:
   - linuxmaster.symbolasd.net
 apt::proxy_host: linuxmaster.symbolasd.net
 apt::proxy_port: 3142
+engtools:
+  jira:
+    dbuser: jira
+    dbname: jiradb
+    dbpass: jirajira
+    dbhost: engtools-db.symbolasd.net
+    host: jira.symbolasd.net

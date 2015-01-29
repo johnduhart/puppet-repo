@@ -3,3 +3,4 @@ lvm::volume_groups:
   datavg:
     physical_volumes:
       - /dev/sdb
+postgresql::server::ip_mask_allow_all_users: 192.168.40.0/24
