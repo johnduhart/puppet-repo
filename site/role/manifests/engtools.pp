@@ -19,5 +19,6 @@ class role::engtools {
 		ensure => 'directory',
 		path => '/opt/atlassian-install',
 	} ->
-	class { '::profile::engtools::jira': }
+	class { '::profile::engtools::jira': } ->
+	class { '::profile::engtools::stash': }
 }

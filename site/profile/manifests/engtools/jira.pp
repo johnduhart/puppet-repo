@@ -1,12 +1,19 @@
 class profile::engtools::jira {
 	$engtools = hiera_hash('engtools')
 	$jira = $engtools['jira']
+	$dbhost = $jira['dbhost']
+	$dbname = $jira['dbname']
 
+	postgresql::validate_db_connection { 'valid-jira-db':
+		database_host     => $dbhost,
+		database_username => $jira['dbuser'],
+		database_password => $jira['dbpass'],
+		database_name     => $dbname,
+	} ->
 	class { '::jira':
 		installdir => '/opt/atlassian-install/jira',
 		homedir => '/mnt/atlassian-home/jira',
-		dbname => $jira['dbname'],
-		dbserver => $jira['dbhost'],
+		dburl => 'jdbc:postgresql://${dbhost}:5432/${dbname}',
 		dbuser => $jira['dbuser'],
 		dbpassword => $jira['dbpass'],
 		javahome => '/usr/lib/jvm/java-8-oracle/',

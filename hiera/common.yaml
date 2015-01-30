@@ -6,7 +6,15 @@ apt::proxy_port: 3142
 engtools:
   jira:
     dbuser: jira
-    dbname: jiradb
     dbpass: jirajira
+    dbname: jiradb
     dbhost: engtools-db.symbolasd.net
+    dburl: 'jdbc:postgresql://engtools-db.symbolasd.net:5432/jiradb'
     host: jira.symbolasd.net
+  stash:
+    dbuser: stash
+    dbpass: stashstash
+    dbname: stashdb
+    dbhost: engtools-db.symbolasd.net
+    dburl: 'jdbc:postgresql://engtools-db.symbolasd.net:5432/stashdb'
+    host: stash.symbolasd.net

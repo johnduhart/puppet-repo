@@ -8,5 +8,6 @@ class role::engtoolsdb {
 		mountpath => '/mnt/db',
 	} ->
 	class { '::profile::engtools::db': } ->
-	class { '::profile::engtools::jiradb': }
+	class { '::profile::engtools::jiradb': } ->
+	class { '::profile::engtools::stashdb': }
 }
