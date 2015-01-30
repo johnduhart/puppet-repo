@@ -13,7 +13,7 @@ class profile::engtools::jira {
 	class { '::jira':
 		installdir => '/opt/atlassian-install/jira',
 		homedir => '/mnt/atlassian-home/jira',
-		dburl => 'jdbc:postgresql://${dbhost}:5432/${dbname}',
+		dburl => "jdbc:postgresql://${dbhost}:5432/${dbname}",
 		dbuser => $jira['dbuser'],
 		dbpassword => $jira['dbpass'],
 		javahome => '/usr/lib/jvm/java-8-oracle/',

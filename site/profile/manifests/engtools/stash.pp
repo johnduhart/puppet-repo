@@ -18,7 +18,7 @@ class profile::engtools::stash {
 	class { '::stash':
 		installdir => '/opt/atlassian-install/stash',
 		homedir => '/mnt/atlassian-home/stash',
-		dburl => 'jdbc:postgresql://${dbhost}:5432/${dbname}',
+		dburl => "jdbc:postgresql://${dbhost}:5432/${dbname}",
 		dbuser => $stash['dbuser'],
 		dbpassword => $stash['dbpass'],
 		javahome => '/usr/lib/jvm/java-8-oracle/',
