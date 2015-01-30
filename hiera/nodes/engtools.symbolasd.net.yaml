@@ -7,3 +7,4 @@ lvm::volume_groups:
     physical_volumes:
       - /dev/sdc
 jira::version: '6.3.13'
+jira::jvm_xmx: '768m'
