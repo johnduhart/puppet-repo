@@ -6,4 +6,4 @@ lvm::volume_groups:
   archivevg:
     physical_volumes:
       - /dev/sdc
-jira::version: '6.3.5'
+jira::version: '6.3.13'
