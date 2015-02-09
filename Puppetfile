@@ -16,3 +16,9 @@ mod 'saz/ssh'
 
 mod 'proteon/java',
 	:git => 'https://github.com/johnduhart/puppet-java'
+
+mod 'johnduhart/teamcity',
+	:git => 'https://github.com/johnduhart/puppet-teamcity'
+
+mod 'mkrakowitzer/confluence',
+	:git => 'https://github.com/mkrakowitzer/puppet-confluence'

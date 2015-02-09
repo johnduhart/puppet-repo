@@ -9,4 +9,7 @@ class role::engtools {
 	class { '::profile::engtools::stash':
 		require => Class['::profile::engtools::base'],
 	}
+	class { '::profile::engtools::confluence':
+		require => Class['::profile::engtools::base'],
+	}
 }
