@@ -22,3 +22,9 @@ engtools:
     dbname: confluencedb
     dbhost: engtools-db.symbolasd.net
     host: wiki.symbolasd.net
+  teamcity:
+    dbuser: teamcity
+    dbpass: citycity
+    dbname: teamcitydb
+    dbhost: engtools-db.symbolasd.net
+    host: ci.symbolasd.net

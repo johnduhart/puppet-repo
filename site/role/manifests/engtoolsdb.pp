@@ -10,5 +10,6 @@ class role::engtoolsdb {
 	class { '::profile::engtools::db': } ->
 	class { '::profile::engtools::jiradb': } ->
 	class { '::profile::engtools::stashdb': } ->
-	class { '::profile::engtools::confluencedb': }
+	class { '::profile::engtools::confluencedb': } ->
+	class { '::profile::engtools::teamcitydb': }
 }

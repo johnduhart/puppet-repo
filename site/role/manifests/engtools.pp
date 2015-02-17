@@ -12,4 +12,7 @@ class role::engtools {
 	class { '::profile::engtools::confluence':
 		require => Class['::profile::engtools::base'],
 	}
+	class { '::profile::engtools::teamcity':
+		require => Class['::profile::engtools::base'],
+	}
 }
