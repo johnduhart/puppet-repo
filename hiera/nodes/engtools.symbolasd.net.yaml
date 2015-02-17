@@ -7,8 +7,8 @@ lvm::volume_groups:
     physical_volumes:
       - /dev/sdc
 jira::version: '6.3.13'
-jira::jvm_xmx: '768m'
+jira::jvm_xmx: '512m'
 stash::version: '3.6.1'
-stash::jvm_xmx: '768m'
+stash::jvm_xmx: '512m'
 confluence::version: '5.7'
-confluence::jvm_xmx: '768m'
+confluence::jvm_xmx: '512m'
